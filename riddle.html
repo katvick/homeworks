@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Загадки</title>
+	<script type="text/javascript">
+		
+		var answers = 0;
+		
+		//загадка 1
+		var userAnswer = prompt('Загадка №1. Зимой и летом одним цветом. Введите ответ:');
+		userAnswer = userAnswer.toLowerCase(); //в ответе все заглавные буквы меняются на маленькие
+		if (userAnswer == 'ёлка' || userAnswer == 'ель' || userAnswer == 'елка' || userAnswer == 'сосна') {
+			alert('Правильно! Нажмите ОК для перехода к следующей загадке.');
+			answers++;
+		} else {
+			alert('Неверно! Правильный ответ: елка. Нажмите ОК для перехода к следующей загадке.');
+		}
+		
+		//загадка 2
+		userAnswer = prompt('Загадка №2. Висит груша, нельзя скушать. Введите ответ:');
+		userAnswer = userAnswer.toLowerCase();
+		if (userAnswer == 'лампа' || userAnswer == 'лампочка') {
+			alert('Правильно! Нажмите ОК для перехода к следующей загадке.');
+			answers++;
+		} else {
+			alert('Неверно! Правильный ответ: лампа. Нажмите ОК для перехода к следующей загадке.');
+		}
+
+		//загадка 3
+		userAnswer = prompt('Загадка №3. Сперва блеск, за блеском - треск! Введите ответ:');
+		userAnswer = userAnswer.toLowerCase();
+		if (userAnswer == 'гроза') {
+			alert('Правильно! Нажмите ОК для перехода к итогам.');
+			answers++;
+		} else {
+			alert('Неверно! Правильный ответ: гроза. Нажмите ОК для перехода к итогам.');
+		}
+
+		//итог
+		alert('Количество правильных ответов: ' + answers);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
